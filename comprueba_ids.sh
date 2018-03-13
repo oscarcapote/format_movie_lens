@@ -31,3 +31,4 @@ sed -r $commandSed formated_ratings_temp.dat >&4
 rm ./formated_ratings_temp.dat
 #echo $commandSed
 #awk  -F '§' 'NR>1 {print $1-1"§"$2"§"$3"§"$4}' formated_ratings.dat
+#awk  -F '§' 'BEGIN {print "userId§movieId§rating§timestamp"} NR>1 {print $1-1"§"$2"§"$3-1"§"$4}' formated_ratings2.dat> formated_ratings.dat
